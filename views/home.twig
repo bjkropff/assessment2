@@ -1,9 +1,23 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
         <title>Repeat Counter</title>
     </head>
     <body>
-        <h1>Enter your word here to see how many times it shows up in yout string.</h1>
+        <div class='container'>
+            <h1>Your Repeat Counter</h1>
+        <p>Enter your word here to see how many times it shows up in yout string</p>
+        <form action='/count'>
+            <div class='form-group'>
+              <label for='string'>String:</label>
+              <input id='string' name='string' class='form-control' type='text'>
+            </div>
+            <div class='form-group'>
+              <label for='word'>Word:</label>
+              <input id='word' name='word' class='form-control' type='text'>
+            </div>
+            <button type='submit' class='btn-success'>Score</button>
+        </form>
     </body>
 </html>
