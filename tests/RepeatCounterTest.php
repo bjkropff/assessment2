@@ -7,46 +7,62 @@
         {
 
             //Arrange
-            $test_EqualsFalse = new RepeatCounter;
+            $testSimpleComparison = new RepeatCounter;
             $input1 = "a";
             $input2 = "b";
 
             //Act
-            $result = $test_EqualsFalse->countRepeat($input1, $input2);
+            $result = $testSimpleComparison->countRepeats($input1, $input2);
 
             //Assert
-            $this->assertEquals(false, $result);
+            $this->assertEquals( 0, $result);
         }
 
         function test_SameComparison()
         {
 
             //Arrange
-            $test_EqualsFalse = new RepeatCounter;
+            $testSameComparison = new RepeatCounter;
             $input1 = "ab";
             $input2 = "ab";
 
             //Act
-            $result = $test_EqualsFalse->countRepeat($input1, $input2);
+            $result = $testSameComparison->countRepeats($input1, $input2);
 
             //Assert
-            $this->assertEquals("ab", $result);
+            $this->assertEquals(1, $result);
         }
 
         function test_TwoLetters()
         {
 
             //Arrange
-            $test_EqualsFalse = new RepeatCounter;
+            $testTwoLetters = new RepeatCounter;
             $input1 = "ab";
             $input2 = "ab";
 
             //Act
-            $result = $test_EqualsFalse->countRepeat($input1, $input2);
+            $result = $testTwoLetters->countRepeats($input1, $input2);
 
             //Assert
             $this->assertEquals("1", $result);
         }
+
+        function test_TwoWords()
+        {
+
+            //Arrange
+            $testTwoWords = new RepeatCounter;
+            $input1 = "ab ab";
+            $input2 = "ab";
+
+            //Act
+            $result = $testTwoWords->countRepeats($input1, $input2);
+
+            //Assert
+            $this->assertEquals("1", $result);
+        }
+
 
     }
 

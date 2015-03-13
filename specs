@@ -5,17 +5,17 @@ Assessment Test Page
 
 input1: "a"
 input2: "b"
-output: false
+output:
 
-This test will take the simplest input ("a") and compare it to a second simple input of different values to see if they are the same value and return false. This test is for baseline comparison
+This test will take the simplest input ("a") and compare it to a second simple input of different values to see if they are the same value and return 0. This test is for baseline comparison
 
 -Test1.5-
 
 input1: "a"
 input2: "a"
-output: "true"
+output: "1"
 
-This test will take the same simple input ("a") and compare it to a second simple input of the same value to see if they are the same value and return true. This test adds basic equality comparison.
+This test will take the same simple input ("a") and compare it to a second simple input of the same value to see if they are the same value and return 1. This test adds basic equality comparison.
 
 Test2
 
