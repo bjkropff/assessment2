@@ -63,6 +63,20 @@
             $this->assertEquals("2", $result);
         }
 
+        function test_DifferentWords()
+        {
+
+            //Arrange
+            $testDifferentWords = new RepeatCounter;
+            $input1 = "ab gg ab";
+            $input2 = "ab";
+
+            //Act
+            $result = $testDifferentWords->countRepeats($input1, $input2);
+
+            //Assert
+            $this->assertEquals("2", $result);
+        }
 
     }
 

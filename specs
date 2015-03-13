@@ -17,7 +17,7 @@ output: "1"
 
 This test will take the same simple input ("a") and compare it to a second simple input of the same value to see if they are the same value and return 1. This test adds basic equality comparison.
 
-Test2
+-Test2-
 
 input1: "ab"
 input2: "ab"
@@ -25,8 +25,7 @@ output: 1
 
 This test will take two simple values, comparing the first to the second, assigning a score of 1 for the match, and return 1 back. This test will exchange the value of a string (ab) to a number (1)
 
-<!--
-Not sure this test was needed. Succeeded without any changes
+<!--This test was not needed. Succeeded without any changes
 Test2
 
 input1: "ab"
@@ -35,8 +34,7 @@ output: "ab"
 
 This test will take a slightly more complex input ("ab"), compare it to a separate input to see if they are the same value and return that value. This test increases the complexity of the equality comparison. -->
 
-
-Test3
+-Test3-
 
 input1: "ab ab"
 input2: "ab"
@@ -44,6 +42,7 @@ output: 2
 
 This is testing two words separated by a space to return an increase in the count (and out) from multiple instances of the same word. This test count the number of instances of a word in a string.
 
+<!--This test was not needed. Succeeded without any changes
 Test4
 
 input1: "ab gg ab"
@@ -51,5 +50,5 @@ input2: "ab"
 output: 2
 
 This is testing find input2 in a string of word where some are different from input2. This test will count the instances of a word in a string and ignore parts of the string that do not match.
-
-Possibly more test to come.0
+-->
+Possibly more test to come.
