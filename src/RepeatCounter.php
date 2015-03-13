@@ -5,14 +5,15 @@
 
         function countRepeat($string, $find)
         {
+            $output_count = 0;
             if ( $string == $find ){
-                $output = true;
+                $output_count += 1;
             }
             else{
-                $output = false;
+                $output_count = false;
             }
 
-            return $output;
+            return $output_count;
         }//closes countRepeat method
     }//closes class
 ?>

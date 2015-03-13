@@ -23,16 +23,30 @@
 
             //Arrange
             $test_EqualsFalse = new RepeatCounter;
-            $input1 = "a";
-            $input2 = "a";
+            $input1 = "ab";
+            $input2 = "ab";
 
             //Act
             $result = $test_EqualsFalse->countRepeat($input1, $input2);
 
             //Assert
-            $this->assertEquals(true, $result);
+            $this->assertEquals("ab", $result);
         }
 
+        function test_TwoLetters()
+        {
+
+            //Arrange
+            $test_EqualsFalse = new RepeatCounter;
+            $input1 = "ab";
+            $input2 = "ab";
+
+            //Act
+            $result = $test_EqualsFalse->countRepeat($input1, $input2);
+
+            //Assert
+            $this->assertEquals("1", $result);
+        }
 
     }
 
