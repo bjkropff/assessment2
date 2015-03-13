@@ -3,11 +3,12 @@
 
     class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
-        function test_SimpleComparison() {
+        function test_SimpleComparison()
+        {
 
             //Arrange
-            $test_EqualsFalse = new CountRepeat;
-            $input = "a";
+            $test_EqualsFalse = new RepeatCounter;
+            $input1 = "a";
             $input2 = "b";
 
             //Act
@@ -17,6 +18,20 @@
             $this->assertEquals(false, $result);
         }
 
+        function test_SameComparison()
+        {
+
+            //Arrange
+            $test_EqualsFalse = new RepeatCounter;
+            $input1 = "a";
+            $input2 = "a";
+
+            //Act
+            $result = $test_EqualsFalse->countRepeat($input1, $input2);
+
+            //Assert
+            $this->assertEquals(true, $result);
+        }
 
 
     }
