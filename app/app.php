@@ -14,6 +14,13 @@
 
     });
 
-    return $app;
+    $app->get("/count", function() use ($app) {
+        $testDifferentWords = new RepeatCounter;
+        $result = $testDifferentWords->countRepeats($_GET['string'],$_GET['word'] );
 
+        return $app['twig']->render('count.twig', array('your_count' => $result));
+
+    });
+
+    return $app;
 ?>
