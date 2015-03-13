@@ -13,7 +13,7 @@ Test1.5
 
 input1: "a"
 input2: "a"
-output: "b"
+output: "a"
 
 This test will take the same simple input ("a") and compare it to a second simple input of the same value to see if they are the same value and return true. This test adds basic equality comparison.
 
@@ -49,4 +49,4 @@ output: 2
 
 This is testing find input2 in a string of word where some are different from input2. This test will count the instances of a word in a string and ignore parts of the string that do not match.
 
-Possibly more test to come.
+Possibly more test to come.0
